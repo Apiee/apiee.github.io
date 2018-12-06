@@ -6,20 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>tabBar配置 | 白菜博客</title>
+  <title>Tag: 规范 | 白菜博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="tabBar如果小程序是一个多 tab 应用（客户端窗口的底部或顶部有 tab 栏可以切换页面），可以通过 tabBar 配置项指定 tab 栏的表现，以及 tab 切换时显示的对应页面。">
-<meta name="keywords" content="小程序,配置">
-<meta property="og:type" content="article">
-<meta property="og:title" content="tabBar配置">
-<meta property="og:url" content="http://yoursite.com/2018/12/06/tabBar配置/index.html">
+  <meta name="description" content="喜欢一切可编程的东西">
+<meta property="og:type" content="website">
+<meta property="og:title" content="白菜博客">
+<meta property="og:url" content="http://yoursite.com/tags/规范/index.html">
 <meta property="og:site_name" content="白菜博客">
-<meta property="og:description" content="tabBar如果小程序是一个多 tab 应用（客户端窗口的底部或顶部有 tab 栏可以切换页面），可以通过 tabBar 配置项指定 tab 栏的表现，以及 tab 切换时显示的对应页面。">
+<meta property="og:description" content="喜欢一切可编程的东西">
 <meta property="og:locale" content="zh_cn">
-<meta property="og:updated_time" content="2018-12-06T15:43:27.051Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tabBar配置">
-<meta name="twitter:description" content="tabBar如果小程序是一个多 tab 应用（客户端窗口的底部或顶部有 tab 栏可以切换页面），可以通过 tabBar 配置项指定 tab 栏的表现，以及 tab 切换时显示的对应页面。">
+<meta name="twitter:title" content="白菜博客">
+<meta name="twitter:description" content="喜欢一切可编程的东西">
   
     <link rel="alternative" href="/atom.xml" title="白菜博客" type="application/atom+xml">
   
@@ -167,152 +165,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-tabBar配置" class="article article-type-post " itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      tabBar配置
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/12/06/小程序规范/" class="archive-article-date">
+  	<time datetime="2018-12-06T08:45:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-06</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2018/12/06/小程序规范/">小程序设计规范</a>
     </h1>
   
 
-        
-        <a href="/2018/12/06/tabBar配置/" class="archive-article-date">
-  	<time datetime="2018-12-06T10:34:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="tabBar"><a href="#tabBar" class="headerlink" title="tabBar"></a>tabBar</h3><p>如果小程序是一个多 tab 应用（客户端窗口的底部或顶部有 tab 栏可以切换页面），可以通过 tabBar 配置项指定 tab 栏的表现，以及 tab 切换时显示的对应页面。</p>
-<a id="more"></a>
-<table>
-<thead>
-<tr>
-<th>属性</th>
-<th>类型</th>
-<th>必填</th>
-<th>默认值</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>color</td>
-<td>HexColor</td>
-<td>是</td>
-<td></td>
-<td>tab 上的文字默认颜色，仅支持十六进制颜色</td>
-</tr>
-<tr>
-<td>selectedColor</td>
-<td>HexColor</td>
-<td>是</td>
-<td></td>
-<td>tab 上的文字选中时的颜色，仅支持十六进制颜色</td>
-</tr>
-<tr>
-<td>backgroundColor</td>
-<td>HexColor</td>
-<td>是</td>
-<td></td>
-<td>tab 的背景色，仅支持十六进制颜色</td>
-</tr>
-<tr>
-<td>borderStyle</td>
-<td>String</td>
-<td>否</td>
-<td>black</td>
-<td>tabbar上边框的颜色， 仅支持 <code>black</code> / <code>white</code></td>
-</tr>
-<tr>
-<td>list</td>
-<td>Array</td>
-<td>是</td>
-<td></td>
-<td>tab 的列表，详见 <code>list</code> 属性说明，最少2个、最多5个 tab</td>
-</tr>
-<tr>
-<td>position</td>
-<td>String</td>
-<td>否</td>
-<td>bottom</td>
-<td>tabBar的位置，仅支持 <code>bottom</code> / <code>top</code></td>
-</tr>
-</tbody>
-</table>
-<p>其中 list 接受一个数组，<strong>只能配置最少2个、最多5个 tab</strong>。tab 按数组的顺序排序，每个项都是一个对象，其属性值如下：</p>
-<table>
-<thead>
-<tr>
-<th>属性</th>
-<th>类型</th>
-<th>必填</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>pagePath</td>
-<td>String</td>
-<td>是</td>
-<td>页面路径，必须在 pages 中先定义</td>
-</tr>
-<tr>
-<td>text</td>
-<td>String</td>
-<td>是</td>
-<td>tab 上按钮文字</td>
-</tr>
-<tr>
-<td>iconPath</td>
-<td>String</td>
-<td>否</td>
-<td>图片路径，icon 大小限制为40kb，建议尺寸为 81px * 81px，不支持网络图片。 <strong>当 postion 为 top 时，不显示 icon。</strong></td>
-</tr>
-<tr>
-<td>selectedIconPath</td>
-<td>String</td>
-<td>否</td>
-<td>选中时的图片路径，icon 大小限制为40kb，建议尺寸为 81px * 81px，不支持网络图片。 <strong>当 postion 为 top 时，不显示 icon。</strong></td>
-</tr>
-</tbody>
-</table>
-<p>实例:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&quot;tabBar&quot;: &#123;</span><br><span class="line">    &quot;list&quot;: [&#123;</span><br><span class="line">      &quot;pagePath&quot;: &quot;pages/index/index&quot;,</span><br><span class="line">      &quot;text&quot;: &quot;首页&quot;</span><br><span class="line">    &#125;, &#123;</span><br><span class="line">      &quot;pagePath&quot;: &quot;pages/logs/logs&quot;,</span><br><span class="line">      &quot;text&quot;: &quot;日志&quot;</span><br><span class="line">    &#125;]</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-<p><strong>注意:点击页面上的navigator组件,如果要tabBar变色,要设置open-type:switchTab</strong></p>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -322,13 +204,13 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">配置</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">规范</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -341,114 +223,17 @@
 	</div>
 
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/12/06/tabBar配置/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2018/12/07/组件概念/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          组件概念
-        
-      </div>
-    </a>
   
   
-    <a href="/2018/12/06/navigator组件/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">navigator组件</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
-
+    
 
 
           </div>
@@ -472,9 +257,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
