@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>标签 | 白菜博客</title>
+  <title>navigator组件 | 白菜博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="喜欢一切可编程的东西">
-<meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+  <meta name="description" content="navigator页面链接。">
+<meta name="keywords" content="小程序,组件">
+<meta property="og:type" content="article">
+<meta property="og:title" content="navigator组件">
+<meta property="og:url" content="http://yoursite.com/2018/12/06/navigator组件/index.html">
 <meta property="og:site_name" content="白菜博客">
-<meta property="og:description" content="喜欢一切可编程的东西">
+<meta property="og:description" content="navigator页面链接。">
 <meta property="og:locale" content="zh_cn">
-<meta property="og:updated_time" content="2018-12-05T20:59:46.992Z">
+<meta property="og:updated_time" content="2018-12-06T10:39:12.938Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签">
-<meta name="twitter:description" content="喜欢一切可编程的东西">
+<meta name="twitter:title" content="navigator组件">
+<meta name="twitter:description" content="navigator页面链接。">
   
     <link rel="alternative" href="/atom.xml" title="白菜博客" type="application/atom+xml">
   
@@ -166,27 +167,189 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope="" itemprop="blogPost">
+            <article id="post-navigator组件" class="article article-type-post " itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      标签
+      navigator组件
     </h1>
   
 
         
-        <a href="/tags/index.html" class="archive-article-date">
-  	<time datetime="2018-12-05T20:59:46.992Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-06</time>
+        <a href="/2018/12/06/navigator组件/" class="archive-article-date">
+  	<time datetime="2018-12-06T10:32:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-06</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h4 id="navigator"><a href="#navigator" class="headerlink" title="navigator"></a>navigator</h4><p>页面链接。</p>
+<a id="more"></a>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>类型</th>
+<th>默认值</th>
+<th>说明</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>target</td>
+<td>String</td>
+<td>self</td>
+<td>在哪个目标上发生跳转，默认当前小程序，可选值self/miniProgram</td>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html" target="_blank" rel="noopener">2.0.7</a></td>
+</tr>
+<tr>
+<td>url</td>
+<td>String</td>
+<td></td>
+<td>当前小程序内的跳转链接</td>
+<td></td>
+</tr>
+<tr>
+<td>open-type</td>
+<td>String</td>
+<td>navigate</td>
+<td>跳转方式</td>
+<td></td>
+</tr>
+<tr>
+<td>delta</td>
+<td>Number</td>
+<td></td>
+<td>当 open-type 为 ‘navigateBack’ 时有效，表示回退的层数</td>
+<td></td>
+</tr>
+<tr>
+<td>app-id</td>
+<td>String</td>
+<td></td>
+<td>当target=”miniProgram”时有效，要打开的小程序 appId</td>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html" target="_blank" rel="noopener">2.0.7</a></td>
+</tr>
+<tr>
+<td>path</td>
+<td>String</td>
+<td></td>
+<td>当target=”miniProgram”时有效，打开的页面路径，如果为空则打开首页</td>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html" target="_blank" rel="noopener">2.0.7</a></td>
+</tr>
+<tr>
+<td>extra-data</td>
+<td>Object</td>
+<td></td>
+<td>当target=”miniProgram”时有效，需要传递给目标小程序的数据，目标小程序可在 <code>App.onLaunch()</code>，<code>App.onShow()</code> 中获取到这份数据。<a href="https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/app.html" target="_blank" rel="noopener">详情</a></td>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html" target="_blank" rel="noopener">2.0.7</a></td>
+</tr>
+<tr>
+<td>version</td>
+<td>version</td>
+<td>release</td>
+<td>当target=”miniProgram”时有效，要打开的小程序版本，有效值 develop（开发版），trial（体验版），release（正式版），仅在当前小程序为开发版或体验版时此参数有效；如果当前小程序是正式版，则打开的小程序必定是正式版。</td>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html" target="_blank" rel="noopener">2.0.7</a></td>
+</tr>
+<tr>
+<td>hover-class</td>
+<td>String</td>
+<td>navigator-hover</td>
+<td>指定点击时的样式类，当<code>hover-class=&quot;none&quot;</code>时，没有点击态效果</td>
+<td></td>
+</tr>
+<tr>
+<td>hover-stop-propagation</td>
+<td>Boolean</td>
+<td>false</td>
+<td>指定是否阻止本节点的祖先节点出现点击态</td>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html" target="_blank" rel="noopener">1.5.0</a></td>
+</tr>
+<tr>
+<td>hover-start-time</td>
+<td>Number</td>
+<td>50</td>
+<td>按住后多久出现点击态，单位毫秒</td>
+<td></td>
+</tr>
+<tr>
+<td>hover-stay-time</td>
+<td>Number</td>
+<td>600</td>
+<td>手指松开后点击态保留时间，单位毫秒</td>
+<td></td>
+</tr>
+<tr>
+<td>bindsuccess</td>
+<td>String</td>
+<td></td>
+<td>当target=”miniProgram”时有效，跳转小程序成功</td>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html" target="_blank" rel="noopener">2.0.7</a></td>
+</tr>
+<tr>
+<td>bindfail</td>
+<td>String</td>
+<td></td>
+<td>当target=”miniProgram”时有效，跳转小程序失败</td>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html" target="_blank" rel="noopener">2.0.7</a></td>
+</tr>
+<tr>
+<td>bindcomplete</td>
+<td>String</td>
+<td></td>
+<td>当target=”miniProgram”时有效，跳转小程序完成</td>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html" target="_blank" rel="noopener">2.0.7</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>open-type 有效值：</strong></p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>说明</th>
+<th>最低版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>navigate</td>
+<td>对应 <a href="https://developers.weixin.qq.com/miniprogram/dev/api/wx.navigateTo.html" target="_blank" rel="noopener"><code>wx.navigateTo</code></a> 或 <a href="https://developers.weixin.qq.com/miniprogram/dev/api/wx.navigateToMiniProgram.html" target="_blank" rel="noopener"><code>wx.navigateToMiniProgram</code></a> 的功能</td>
+<td></td>
+</tr>
+<tr>
+<td>redirect</td>
+<td>对应 <a href="https://developers.weixin.qq.com/miniprogram/dev/api/wx.redirectTo.html" target="_blank" rel="noopener"><code>wx.redirectTo</code></a> 的功能</td>
+<td></td>
+</tr>
+<tr>
+<td>switchTab</td>
+<td>对应 <a href="https://developers.weixin.qq.com/miniprogram/dev/api/wx.switchTab.html" target="_blank" rel="noopener"><code>wx.switchTab</code></a> 的功能</td>
+<td></td>
+</tr>
+<tr>
+<td>reLaunch</td>
+<td>对应 <a href="https://developers.weixin.qq.com/miniprogram/dev/api/wx.reLaunch.html" target="_blank" rel="noopener"><code>wx.reLaunch</code></a> 的功能</td>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html" target="_blank" rel="noopener">1.1.0</a></td>
+</tr>
+<tr>
+<td>navigateBack</td>
+<td>对应 <a href="https://developers.weixin.qq.com/miniprogram/dev/api/wx.navigateBack.html" target="_blank" rel="noopener"><code>wx.navigateBack</code></a> 的功能</td>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html" target="_blank" rel="noopener">1.1.0</a></td>
+</tr>
+<tr>
+<td>exit</td>
+<td>退出小程序，target=”miniProgram”时生效</td>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html" target="_blank" rel="noopener">2.1.0</a></td>
+</tr>
+</tbody>
+</table>
+
       
 
       
@@ -215,6 +378,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">小程序,组件</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -265,7 +439,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/tags/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/12/06/navigator组件/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -277,6 +451,25 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2018/12/06/tabBar配置/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          tabBar配置
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/12/06/小程序rpx/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">小程序rpx</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -308,7 +501,6 @@
 
 
 
-
           </div>
         </div>
       </div>
@@ -330,7 +522,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

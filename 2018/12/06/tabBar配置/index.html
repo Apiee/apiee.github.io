@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>标签 | 白菜博客</title>
+  <title>tabBar配置 | 白菜博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="喜欢一切可编程的东西">
-<meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+  <meta name="description" content="tabBar如果小程序是一个多 tab 应用（客户端窗口的底部或顶部有 tab 栏可以切换页面），可以通过 tabBar 配置项指定 tab 栏的表现，以及 tab 切换时显示的对应页面。">
+<meta name="keywords" content="小程序,配置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="tabBar配置">
+<meta property="og:url" content="http://yoursite.com/2018/12/06/tabBar配置/index.html">
 <meta property="og:site_name" content="白菜博客">
-<meta property="og:description" content="喜欢一切可编程的东西">
+<meta property="og:description" content="tabBar如果小程序是一个多 tab 应用（客户端窗口的底部或顶部有 tab 栏可以切换页面），可以通过 tabBar 配置项指定 tab 栏的表现，以及 tab 切换时显示的对应页面。">
 <meta property="og:locale" content="zh_cn">
-<meta property="og:updated_time" content="2018-12-05T20:59:46.992Z">
+<meta property="og:updated_time" content="2018-12-06T10:39:15.498Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签">
-<meta name="twitter:description" content="喜欢一切可编程的东西">
+<meta name="twitter:title" content="tabBar配置">
+<meta name="twitter:description" content="tabBar如果小程序是一个多 tab 应用（客户端窗口的底部或顶部有 tab 栏可以切换页面），可以通过 tabBar 配置项指定 tab 栏的表现，以及 tab 切换时显示的对应页面。">
   
     <link rel="alternative" href="/atom.xml" title="白菜博客" type="application/atom+xml">
   
@@ -166,27 +167,124 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope="" itemprop="blogPost">
+            <article id="post-tabBar配置" class="article article-type-post " itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      标签
+      tabBar配置
     </h1>
   
 
         
-        <a href="/tags/index.html" class="archive-article-date">
-  	<time datetime="2018-12-05T20:59:46.992Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-06</time>
+        <a href="/2018/12/06/tabBar配置/" class="archive-article-date">
+  	<time datetime="2018-12-06T10:34:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-06</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h3 id="tabBar"><a href="#tabBar" class="headerlink" title="tabBar"></a>tabBar</h3><p>如果小程序是一个多 tab 应用（客户端窗口的底部或顶部有 tab 栏可以切换页面），可以通过 tabBar 配置项指定 tab 栏的表现，以及 tab 切换时显示的对应页面。</p>
+<a id="more"></a>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>必填</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td>HexColor</td>
+<td>是</td>
+<td></td>
+<td>tab 上的文字默认颜色，仅支持十六进制颜色</td>
+</tr>
+<tr>
+<td>selectedColor</td>
+<td>HexColor</td>
+<td>是</td>
+<td></td>
+<td>tab 上的文字选中时的颜色，仅支持十六进制颜色</td>
+</tr>
+<tr>
+<td>backgroundColor</td>
+<td>HexColor</td>
+<td>是</td>
+<td></td>
+<td>tab 的背景色，仅支持十六进制颜色</td>
+</tr>
+<tr>
+<td>borderStyle</td>
+<td>String</td>
+<td>否</td>
+<td>black</td>
+<td>tabbar上边框的颜色， 仅支持 <code>black</code> / <code>white</code></td>
+</tr>
+<tr>
+<td>list</td>
+<td>Array</td>
+<td>是</td>
+<td></td>
+<td>tab 的列表，详见 <code>list</code> 属性说明，最少2个、最多5个 tab</td>
+</tr>
+<tr>
+<td>position</td>
+<td>String</td>
+<td>否</td>
+<td>bottom</td>
+<td>tabBar的位置，仅支持 <code>bottom</code> / <code>top</code></td>
+</tr>
+</tbody>
+</table>
+<p>其中 list 接受一个数组，<strong>只能配置最少2个、最多5个 tab</strong>。tab 按数组的顺序排序，每个项都是一个对象，其属性值如下：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>必填</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pagePath</td>
+<td>String</td>
+<td>是</td>
+<td>页面路径，必须在 pages 中先定义</td>
+</tr>
+<tr>
+<td>text</td>
+<td>String</td>
+<td>是</td>
+<td>tab 上按钮文字</td>
+</tr>
+<tr>
+<td>iconPath</td>
+<td>String</td>
+<td>否</td>
+<td>图片路径，icon 大小限制为40kb，建议尺寸为 81px * 81px，不支持网络图片。 <strong>当 postion 为 top 时，不显示 icon。</strong></td>
+</tr>
+<tr>
+<td>selectedIconPath</td>
+<td>String</td>
+<td>否</td>
+<td>选中时的图片路径，icon 大小限制为40kb，建议尺寸为 81px * 81px，不支持网络图片。 <strong>当 postion 为 top 时，不显示 icon。</strong></td>
+</tr>
+</tbody>
+</table>
+<p>实例:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&quot;tabBar&quot;: &#123;</span><br><span class="line">    &quot;list&quot;: [&#123;</span><br><span class="line">      &quot;pagePath&quot;: &quot;pages/index/index&quot;,</span><br><span class="line">      &quot;text&quot;: &quot;首页&quot;</span><br><span class="line">    &#125;, &#123;</span><br><span class="line">      &quot;pagePath&quot;: &quot;pages/logs/logs&quot;,</span><br><span class="line">      &quot;text&quot;: &quot;日志&quot;</span><br><span class="line">    &#125;]</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p><strong>注意:点击页面上的navigator组件,如果要tabBar变色,要设置open-type:switchTab</strong></p>
+
       
 
       
@@ -215,6 +313,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">小程序,配置</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -265,7 +374,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/tags/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/12/06/tabBar配置/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -277,6 +386,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2018/12/06/navigator组件/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">navigator组件</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -308,7 +427,6 @@
 
 
 
-
           </div>
         </div>
       </div>
@@ -330,7 +448,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

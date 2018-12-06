@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>标签 | 白菜博客</title>
+  <title>项目和目录文件结构 | 白菜博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="喜欢一切可编程的东西">
-<meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+  <meta name="description" content="目录结构小程序包含一个描述整体程序的 app 和多个描述各自页面的 page。 一个小程序主体部分由三个文件组成，必须放在项目的根目录，如下：">
+<meta name="keywords" content="小程序,目录结构">
+<meta property="og:type" content="article">
+<meta property="og:title" content="项目和目录文件结构">
+<meta property="og:url" content="http://yoursite.com/2018/12/06/项目和目录文件结构/index.html">
 <meta property="og:site_name" content="白菜博客">
-<meta property="og:description" content="喜欢一切可编程的东西">
+<meta property="og:description" content="目录结构小程序包含一个描述整体程序的 app 和多个描述各自页面的 page。 一个小程序主体部分由三个文件组成，必须放在项目的根目录，如下：">
 <meta property="og:locale" content="zh_cn">
-<meta property="og:updated_time" content="2018-12-05T20:59:46.992Z">
+<meta property="og:updated_time" content="2018-12-06T09:26:24.905Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签">
-<meta name="twitter:description" content="喜欢一切可编程的东西">
+<meta name="twitter:title" content="项目和目录文件结构">
+<meta name="twitter:description" content="目录结构小程序包含一个描述整体程序的 app 和多个描述各自页面的 page。 一个小程序主体部分由三个文件组成，必须放在项目的根目录，如下：">
   
     <link rel="alternative" href="/atom.xml" title="白菜博客" type="application/atom+xml">
   
@@ -166,27 +167,100 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope="" itemprop="blogPost">
+            <article id="post-项目和目录文件结构" class="article article-type-post " itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      标签
+      项目和目录文件结构
     </h1>
   
 
         
-        <a href="/tags/index.html" class="archive-article-date">
-  	<time datetime="2018-12-05T20:59:46.992Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-06</time>
+        <a href="/2018/12/06/项目和目录文件结构/" class="archive-article-date">
+  	<time datetime="2018-12-06T08:57:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-06</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h1><p>小程序包含一个描述整体程序的 <code>app</code> 和多个描述各自页面的 <code>page</code>。</p>
+<p>一个小程序主体部分由三个文件组成，必须放在项目的根目录，如下：</p>
+<a id="more"></a>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>必需</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/app.html" target="_blank" rel="noopener">app.js</a></td>
+<td>是</td>
+<td>小程序逻辑</td>
+</tr>
+<tr>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/config.html" target="_blank" rel="noopener">app.json</a></td>
+<td>是</td>
+<td>小程序公共配置</td>
+</tr>
+<tr>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxss.html" target="_blank" rel="noopener">app.wxss</a></td>
+<td>否</td>
+<td>小程序公共样式表</td>
+</tr>
+</tbody>
+</table>
+<p>一个小程序页面由四个文件组成，分别是：</p>
+<table>
+<thead>
+<tr>
+<th>文件类型</th>
+<th>必需</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/page.html" target="_blank" rel="noopener">js</a></td>
+<td>是</td>
+<td>页面逻辑</td>
+</tr>
+<tr>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/index.html" target="_blank" rel="noopener">wxml</a></td>
+<td>是</td>
+<td>页面结构</td>
+</tr>
+<tr>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/config.html#%E9%A1%B5%E9%9D%A2%E9%85%8D%E7%BD%AE" target="_blank" rel="noopener">json</a></td>
+<td>否</td>
+<td>页面配置</td>
+</tr>
+<tr>
+<td><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxss.html" target="_blank" rel="noopener">wxss</a></td>
+<td>否</td>
+<td>页面样式表</td>
+</tr>
+</tbody>
+</table>
+<p><strong>注意：为了方便开发者减少配置项，描述页面的四个文件必须具有相同的路径与文件名。</strong></p>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><h2 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h2><p>小程序根目录下的 <code>app.json</code> 文件用来对微信小程序进行全局配置，决定页面文件的路径、窗口表现、设置网络超时时间、设置多 tab 等。</p>
+<p>如开发目录为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">├── app.js</span><br><span class="line">├── app.json</span><br><span class="line">├── app.wxss</span><br><span class="line">├── pages</span><br><span class="line">│   │── index</span><br><span class="line">│   │   ├── index.wxml</span><br><span class="line">│   │   ├── index.js</span><br><span class="line">│   │   ├── index.json</span><br><span class="line">│   │   └── index.wxss</span><br><span class="line">│   └── logs</span><br><span class="line">│       ├── logs.wxml</span><br><span class="line">│       └── logs.js</span><br><span class="line">└── utils</span><br></pre></td></tr></table></figure>
+<p>则需要在 app.json 中写</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"pages"</span>:[</span><br><span class="line">    <span class="string">"pages/index/index"</span>,</span><br><span class="line">    <span class="string">"pages/logs/logs"</span></span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="页面配置"><a href="#页面配置" class="headerlink" title="页面配置"></a>页面配置</h2><p>每一个小程序页面也可以使用<code>.json</code>文件来对本页面的窗口表现进行配置。</p>
+<p>页面的配置只能设置 <code>app.json</code> 中部分 <code>window</code> 配置项的内容，页面中配置项会覆盖 <code>app.json</code> 的 <code>window</code> 中相同的配置项。</p>
+<p>页面的<code>.json</code>只能设置 <code>window</code> 相关的配置项，以决定本页面的窗口表现，所以无需写 <code>window</code> 这个键。</p>
+<h1 id="逻辑层"><a href="#逻辑层" class="headerlink" title="逻辑层"></a>逻辑层</h1><h2 id="App-Object-注册程序"><a href="#App-Object-注册程序" class="headerlink" title="App(Object) 注册程序"></a>App(Object) 注册程序</h2><p><code>App()</code> 函数用来注册一个小程序。接受一个 <code>Object</code> 参数，其指定小程序的生命周期回调等。</p>
+<p><strong>App() 必须在 app.js 中调用，必须调用且只能调用一次。不然会出现无法预期的后果。</strong></p>
+<h2 id="Page-Object-构造器-注册页面"><a href="#Page-Object-构造器-注册页面" class="headerlink" title="Page(Object) 构造器  注册页面"></a>Page(Object) 构造器  注册页面</h2><p><code>Page(Object)</code> 函数用来注册一个页面。接受一个 <code>Object</code> 类型参数，其指定页面的初始数据、生命周期回调、事件处理函数等。</p>
+
       
 
       
@@ -215,6 +289,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">小程序,目录结构</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -265,7 +350,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/tags/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/12/06/项目和目录文件结构/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -277,6 +362,25 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2018/12/06/基础组件/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          基础组件
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/12/06/小程序规范/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">小程序设计规范</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -308,7 +412,6 @@
 
 
 
-
           </div>
         </div>
       </div>
@@ -330,7 +433,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
