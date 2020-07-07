@@ -7,7 +7,18 @@
 
 <html class="theme-next muse use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
+  <script>
+    (function(){
+        if(''){
+            if (prompt('请输入密码') !== ''){
+                alert('密码错误');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
@@ -101,7 +112,7 @@
 <meta property="og:image" content="http://apiee.github.io/2020/06/29/css-selector/1594135731085.png">
 <meta property="og:image" content="http://apiee.github.io/2020/06/29/css-selector/1594135742191.png">
 <meta property="og:image" content="http://apiee.github.io/2020/06/29/css-selector/1594135774694.png">
-<meta property="og:updated_time" content="2020-07-07T17:13:04.691Z">
+<meta property="og:updated_time" content="2020-07-07T17:53:10.923Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css选择器">
 <meta name="twitter:description" content="css选择器通配符选择器和元素选择器 通配符选择器 用 * 表示,选中页面中所有元素,用于设置初始化公共属性 123* &amp;#123;    property: value;&amp;#125;">
@@ -115,7 +126,7 @@
     root: '/',
     scheme: 'Muse',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -648,6 +659,13 @@
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -682,11 +700,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
